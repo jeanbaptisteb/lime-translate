@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lime-translate"
+version = "0.0.1a0"
+authors = [
+  { name="Jean-Baptiste Bertrand", email="jean-baptiste.bertrand@univ-amu.fr" },
+]
+description = "Lime-translate is a Python library designed to streamline the translation workflow for Limesurvey projects, improving compatibility between Limesurvey and computer-assisted translation software."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/jeanbaptisteb/lime-translate"
+Issues = "https://github.com/jeanbaptisteb/lime-translate/issues"
