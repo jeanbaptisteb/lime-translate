@@ -1,23 +1,13 @@
-# Lime-translate 0.0.1a0
+# Lime-translate
 
-Lime-translate is a Python library designed to improve compatibility between Limesurvey and computer-assisted translation (CAT) software. Currently, it can convert Limesurvey files (LSS) to the XLIFF format used by computer-assisted translation software, and reintegrate the translated file into the original LSS file.
+[![Version](https://img.shields.io/pypi/v/lime-translate.svg?maxAge=86400)](https://pypi.org/project/lime-translate/)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/lime-translate.svg)](https://pypi.org/project/lime-translate)
 
-# Current features
-
-- conversion from LSS to XLIFF
-- reintegrating a translated XLIFF file into a LSS file
-
-This is an alpha version, so use it at your own risks!
+Lime-translate is a Python library that lets survey designers and professional translators work together, by converting LimeSurvey survey files into formats compatible with computer-assisted translation (CAT) software, and back again.
 
 # Installation
 
 `pip install lime-translate`
-
-# Motivation
-
-Limesurvey is an open-source statistical survey web application. It already offers a translation interface for multilingual surveys, but this translation interface is quite rudimentary compared to the features offered by modern computer-assisted translation tools (OmegaT, weblate, etc). In addition, Limesurvey currently does not offer an export format directly compatible with these CAT tools.
-
-The `lime-translate` package is meant to fill this current compatibility gap between Limesurvey and computer-assisted translation tools.
 
 # Usage example
 
@@ -50,14 +40,29 @@ with open("./bob_survey/translated/bilingual_en_fr.lss", "wb") as f:
 
 Tadam! Bob will then be able to immediately import the resulting translated survey file ("bilingual_en_fr.lss") into Limesurvey.
 
-# Exporting an LSS file from Limesurvey
+
+# Current features
+
+- conversion from LSS to XLIFF
+- reintegrating a translated XLIFF file into a LSS file
+
+This is an alpha version, so use it at your own risks!
+
+
+## Exporting an LSS file from Limesurvey
 
 To ensure your LSS file will work seamlessly with `lime-translate`, before [exporting the LSS file](https://www.limesurvey.org/manual/Display/Export_survey) from Limesurvey, you must [add your target language to the "additional languages" section](https://www.limesurvey.org/manual/Multilingual_survey) in the Limesurvey admin interface.
+
+# Motivation
+
+Limesurvey is an open-source statistical survey web application. It already offers a translation interface for multilingual surveys, but this translation interface is quite rudimentary compared to the features offered by modern computer-assisted translation tools (OmegaT, weblate, etc). In addition, Limesurvey currently does not offer an export format directly compatible with these CAT tools.
+
+The `lime-translate` package is meant to fill this current compatibility gap between Limesurvey and computer-assisted translation tools.
 
 
 # Limitations, compatibility with Limesurvey versions, etc.
 
-While it is planned to support more recent versions of Limesurvey, the package is currently only compatible with LSS files exported from Limesurvey 3.x.
+While it is planned to support more recent versions of Limesurvey, the package current version is only compatible with LSS files exported from Limesurvey 3.x.
 
 The only supported export format is XLIFF, while the package is also planned to support other formats in the future.
 

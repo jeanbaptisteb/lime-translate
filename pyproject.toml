@@ -8,11 +8,12 @@ version = "0.0.1a0"
 authors = [
   { name="Jean-Baptiste Bertrand", email="jean-baptiste.bertrand@univ-amu.fr" },
 ]
-description = "Lime-translate is a Python library designed to improve compatibility between Limesurvey and computer-assisted translation (CAT) software."
+description = "Lime-translate is a Python library that lets survey designers and professional translators work together, by converting LimeSurvey survey files into formats compatible with computer-assisted translation (CAT) software, and back again.
+"
 readme = "README.md"
 requires-python = ">=3.14"
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
     "Operating System :: OS Independent",
 ]
 license = "GPL-3.0-or-later"
