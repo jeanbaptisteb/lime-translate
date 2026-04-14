@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+lime_translate.egg-info/PKG-INFO
+lime_translate.egg-info/SOURCES.txt
+lime_translate.egg-info/dependency_links.txt
+lime_translate.egg-info/requires.txt
+lime_translate.egg-info/top_level.txt

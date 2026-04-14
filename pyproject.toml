@@ -18,10 +18,13 @@ classifiers = [
 license = "GPL-3.0-or-later"
 license-files = ["LICEN[CS]E*"]
 keywords = ["limesurvey", "translation", "conversion"]
-dependencies = ["lxml"]
+dependencies = ["lxml>=6.0.4"]
 [project.urls]
 Homepage = "https://gitlab.huma-num.fr/jbertrand/lime-translate"
 Issues = "https://gitlab.huma-num.fr/jbertrand/lime-translate/issues"
+
+[tool.setuptools]
+include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["src"]
