@@ -11,8 +11,6 @@ from lxml import etree, html
 from collections import OrderedDict
 import copy
 
-
-
 XLIF_NS = "urn:oasis:names:tc:xliff:document:1.2"
 NSMAP = {None: XLIF_NS}
 translatable_sections = OrderedDict([("surveys_languagesettings", [
@@ -63,7 +61,7 @@ def create_parser():
 def validate_element(element, section, identifier=""):
     required_keys = {
         "surveys_languagesettings": ["field", "section"],
-
+        "quota_languagesettings": ["field", "section"],
         "groups": ["gid", "field", "section"],
         "questions": ["gid", "qid", "field", "section"],
         "question_attributes": ["qid", "attribute", "field", "section"],
@@ -132,6 +130,7 @@ def lss_to_xliff(lss_file_path,
 
 
             field_texts = xpath_text(f"//row[quotals_quota_id='{quota_id}']/{field}")
+
 
             langs = xpath_text(f"//row[quotals_quota_id='{quota_id}']/quotals_language")
 

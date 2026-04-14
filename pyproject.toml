@@ -10,13 +10,14 @@ authors = [
 ]
 description = "Lime-translate is a Python library designed to streamline the translation workflow for Limesurvey projects, improving compatibility between Limesurvey and computer-assisted translation software."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.14"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
 license = "GPL-3.0-or-later"
 license-files = ["LICEN[CS]E*"]
+keywords = ["limesurvey", "translation", "conversion"]
 dependencies = ["lxml"]
 [project.urls]
 Homepage = "https://gitlab.huma-num.fr/jbertrand/lime-translate"

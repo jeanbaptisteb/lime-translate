@@ -50,6 +50,11 @@ with open("./bob_survey/translated/bilingual_en_fr.lss", "wb") as f:
 
 Tadam! Bob will then be able to immediately import the resulting translated survey file ("bilingual_en_fr.lss") into Limesurvey.
 
+# Exporting an LSS from Limesurvey
+
+To ensure your LSS file will work seamlessly with `lime-translate`, before [exporting the LSS file](https://www.limesurvey.org/manual/Display/Export_survey) from Limesurvey, you must [add your target language to the "additional languages" section](https://www.limesurvey.org/manual/Multilingual_survey) of the admin interface.
+
+
 # Limitations, compatibility with Limesurvey versions, etc.
 
 While it is planned to support more recent versions of Limesurvey, the package is currently only compatible with LSS files exported from Limesurvey 3.x.
