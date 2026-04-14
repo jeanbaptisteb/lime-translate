@@ -79,6 +79,30 @@ def validate_element(element, section, identifier=""):
 def lss_to_xliff(lss_file_path,
                  target_id_to_keep=[],
                  target_group_id_to_keep=[]):
+    #target_id_to_keep -> if we want to keep some pre-existing translations, add the corresponding tag names in the list
+    #target_group_id_to_keep -> same as target_id_to_keep, but for larger groups
+    #examples:
+        # #keeping strings coming from invitation emails:
+        # target_id_to_keep=["surveys_languagesettings-surveyls_email_invite_subj",
+        #                        "surveys_languagesettings-surveyls_email_invite",
+        #                        "surveys_languagesettings-surveyls_email_remind_subj",
+        #                        "surveys_languagesettings-surveyls_email_remind",
+        #                        "surveys_languagesettings-surveyls_email_register_subj",
+        #                        "surveys_languagesettings-surveyls_email_register",
+        #                        "surveys_languagesettings-surveyls_email_confirm_subj",
+        #                        "surveys_languagesettings-surveyls_email_confirm",
+        #                        "surveys_languagesettings-email_admin_notification_subj",
+        #                        "surveys_languagesettings-email_admin_notification",
+        #                        "surveys_languagesettings-email_admin_responses_subj",
+        #                        "surveys_languagesettings-email_admin_responses"
+        #                        ]
+        # #ids of options related to specific questions:
+        # target_group_id_to_keep=["answers-answer-350149",
+        #                           "answers-answer-350179",
+        #                           "answers-answer-350175",
+        #                           "answers-answer-353051"
+        #                              ]
+
     # Parse the LSS file
     tree = etree.parse(lss_file_path)
     root = tree.getroot()
