@@ -17,7 +17,10 @@ classifiers = [
 ]
 license = "GPL-3.0-or-later"
 license-files = ["LICEN[CS]E*"]
-
+dependencies = ["lxml"]
 [project.urls]
-Homepage = "https://github.com/jeanbaptisteb/lime-translate"
-Issues = "https://github.com/jeanbaptisteb/lime-translate/issues"
+Homepage = "https://gitlab.huma-num.fr/jbertrand/lime-translate"
+Issues = "https://gitlab.huma-num.fr/jbertrand/lime-translate/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -7,6 +7,8 @@ Lime-translate is a Python library designed to streamline the translation workfl
 - conversion from LSS to XLIFF
 - reintegrating a translated XLIFF file into a LSS file
 
+This is an alpha version, so use it at your own risks!
+
 # Installation
 
 `pip install lime-translate`
@@ -16,16 +18,6 @@ Lime-translate is a Python library designed to streamline the translation workfl
 Limesurvey is an open-source statistical survey web application. It already offers a translation interface for multilingual surveys, but its interface is quite rudimentary compared to the features offered by modern computer-assisted translation tools (OmegaT, weblate, etc). In addition, Limesurvey currently does not offer an export format directly compatible with these CAT tools.
 
 The `lime-translate` package is meant to fill this current compatibility gap between Limesurvey and computer-assisted translation tools.
-
-# Compatibility and Limesurvey versions
-
-While it is planned to support more recent versions of Limesurvey, the package is currently only compatible with LSS files exported from Limesurvey 3.x.
-
-The only supported export format is XLIFF, while the package is also planned to support other formats in the future.
-
-This is an alpha version, initially developed as an experiment for a one-time translation project. While it worked quite well for this specific project, it has not been tested extensively. It is also missing a proper documentation, though a relatively straightforward example is provided below.
-
-Any feedback is welcome, but use it at your own risks!
 
 # Usage example
 
@@ -57,3 +49,13 @@ with open("./bob_survey/translated/bilingual_en_fr.lss", "wb") as f:
 ```
 
 Tadam! Bob will then be able to immediately import the resulting translated survey file ("bilingual_en_fr.lss") into Limesurvey.
+
+# Limitations, compatibility with Limesurvey versions, etc.
+
+While it is planned to support more recent versions of Limesurvey, the package is currently only compatible with LSS files exported from Limesurvey 3.x.
+
+The only supported export format is XLIFF, while the package is also planned to support other formats in the future.
+
+This is an alpha version, initially developed as an experiment for a one-time translation project. While it worked quite well for this specific project, it has not been tested extensively. The package is also missing a proper documentation, though a relatively straightforward usage example is provided above.
+
+Any feedback is welcome, but use it at your own risks!
