@@ -1,5 +1,5 @@
 .spyproject/
-lime_translate.egg-info/
+lime_translate.egg-info
 dist/
 Include/
 Lib/
